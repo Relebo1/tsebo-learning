@@ -1,0 +1,147 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Card-Styled Form */
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+/* Form Title */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+/* Labels */
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Input Fields */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 14px;
+    padding-left: 35px;
+    box-sizing: border-box; /* FIXED INPUT OVERFLOW */
+}
+
+/* Input Focus */
+.input-group input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Icons */
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #6a11cb;
+    font-size: 16px;
+}
+
+/* Upload Section */
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload label {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.file-upload label:hover {
+    background: #2575fc;
+}
+
+/* Image Preview */
+.image-preview {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px dashed #ddd;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#imageText {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2575fc;
+}
+.card-img-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust height to fit your needs */
+    overflow: hidden;
+}
+
+.card-img-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space without stretching */
+    transform: translate(-50%, -50%); /* Center the image */
+}
